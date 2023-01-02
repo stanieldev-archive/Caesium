@@ -1,0 +1,242 @@
+# []: definitial definers
+# (): functional inputs
+# {}: operative brackets
+# *: Read from mem (C)
+# &: Memory (C)
+
+
+
+
+
+define f4k as float4096
+
+
+
+
+DATA_TYPE -> Stack
+[DATA_TYPE] -> Heap
+TYPE* -> TYPE Pointer
+
+
+
+
+
+// Data Variables
+DATA_TYPE MATRIX_NAME = DEFAULT_VALUE;  // Stack
+[DATA_TYPE] MATRIX_NAME = DEFAULT_VALUE;  // Heap
+
+// Data Pointer Variables
+DATA_TYPE^ MATRIX_NAME = DEFAULT_VALUE;  // Stack
+[DATA_TYPE]^ MATRIX_NAME = DEFAULT_VALUE;  // Heap
+
+
+
+// Data Matrices
+DATA_TYPE MATRIX_NAME(7,4) = DEFAULT_VALUE;  // Stack
+[DATA_TYPE] MATRIX_NAME(7,4) = DEFAULT_VALUE;  // Heap
+
+// Data Pointer Matrices
+DATA_TYPE^ MATRIX_NAME(7,4) = DEFAULT_VALUE;  // Stack
+[DATA_TYPE]^ MATRIX_NAME(7,4) = DEFAULT_VALUE;  // Heap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Variable Syntax (` means private in classes)
+VAR_TYPE` VAR_NAME = VAR_VALUE
+
+// Pointer Syntax
+VAR_TYPE* VAR_NAME = &VAR_VALUE
+
+// Function Syntax
+RET_TYPE FUNC_NAME(TYPE Var1 = Default,...) = {INSIDE}
+
+// Class Syntax
+class NewClass = {
+	void NewClass(TYPE Var1 = Default,...) = {
+		#initialization stuff
+	}
+}
+
+// Type Syntax
+PREFIX|BASE|SIZE
+Ex: cint64, ifloat16, float64, char, bool
+
+// Supertype Syntax (can be placed where types are)
+SUPER[VAL_TYPE, SIZE_WITH_Xs]
+Ex:
+vec[VAL_TYPE, AxBxCx...] VAR_NAME = NULL or Matrix
+lst[VAL_TYPE, AxBxCx...] VAR_NAME = NULL or Matrix
+arr[VAL_TYPE, AxBxCx...] VAR_NAME = NULL or Matrix
+
+
+
+
+
+
+
+define TRUE as 1
+define FALSE as 0
+
+
+
+
+
+
+
+
+
+// C CODE
+include[C] <stdio.h>
+
+int main() = {
+	[C] printf("Hello, World!");
+	[C] return 0;
+}
+
+int bruh{3} = 0
+
+
+
+
+
+
+// C++ CODE
+include[C++] <iostream>
+
+int main() = {
+    [C++] std::cout << "Hello World!";
+    [C++] return 0;
+}
+
+[C++>
+int main2() {
+    std::cout << "Hello World!";
+    return 0;
+}
+<C++]
+
+
+// Caesium CODE
+int main() = {
+	int64 alpha = 42
+	int32 beta = 10
+	auto c = alpha + beta   // Compiler-settings dependent
+	int d = alpha + beta    // 32-Bit
+	int64 e = alpha + beta  // 64-Bit
+}
+
+
+
+
+
+
+
+
+
+
+True = 0
+False != 0 (since bool is taken as a large value not 1 bit it will have multiple false with reasons attached to it).
+ - Invert true and false for more error outputs
+
+
+
+
+
+
+Syntax stealing:
+
+c-style definitions
+python type arguments
+no semicolons, use \ for continuation (like python)
+
+python with types and no garbage collection.
+
+
+
+
+
+
+
+
+
+
+
+
+include <complex.ce>  // Controls complex number types and stuff
+include <math.ce>
+include "file.ce"
+
+define TRUE as 0;
+define FALSE as !0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Examples of above:
+cint64 foo = 3 + 4i
+cint64* p_foo = &foo
+cint* p_new = &foo  # looks at size of foo and changes accordingly
+vec[cint64, 7x4] bar;
+vec[float128] foo2 = [3.0, 4.0, 5.0]
+
+int64 = a + bi (auto converts to cint64)
+int64 = bi (auto converts to iint64)
+
+
+
+
+
+float32 new_function(float32 in1, float32 in2 = 0) {
+	return in1 + in2
+}
+
+class BoxItem {
+	vec[char, 64] contents
+	`unsigned int32 size
+
+	`void BoxItem() {}
+	`void BoxItem(vec[char, 64] input_content) {
+		vec[char, 64] contents = input_content
+	}
+
+	void modify(vec[char, 64] input_content) {
+		vec[char, 64] contents = input_content
+	}
+}
+
+cplx[float32] alpha = 4.0 + 3.0i  // equal to cfloat32
+imag[float32] alpha2 = -2.0i      // equal to ifloat32

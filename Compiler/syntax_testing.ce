@@ -1,0 +1,54 @@
+int32 nope = 4
+
+
+
+
+
+
+
+
+/* This is a comment
+it will be ignored because I said so
+bruh
+[C>
+int main22222222222() {
+    printf("Hello");
+}
+<C]
+no u*/
+
+
+
+// [float64]^ fucker = 10;
+
+
+int main() = {
+    float32 b = 2.0;
+    int32 jesus = 5;
+}
+
+
+
+
+float32 brohfsefjposjg = 0;  // Comment after code
+
+[C>
+
+// Comment after code 2
+int main() {
+    printf("Hello");  // Comment after code 3
+}
+<C]
+
+[C>
+#include <stdio.h>
+int main() {
+    printf("Hello");
+}
+<C]
+
+[C++>
+int main() {
+    printf("Hello");
+}
+<C++]
