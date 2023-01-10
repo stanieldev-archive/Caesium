@@ -1,0 +1,168 @@
+Comments:
+// TEXT HERE
+/* Stuff */
+
+
+
+
+Language Brackets:
+[C]
+[C><C]
+__C++__(
+    "C_CODE_HERE"
+)
+
+[C++]
+[C++><C++]
+__C__(
+    "CPP_CODE_HERE"
+)
+
+[ASM]
+[ASM><ASM]
+__ASM__(
+    "ASSEMBLY_CODE_HERE"
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// C Keywords
+auto
+break
+case
+char
+const
+continue
+default
+do
+double
+else
+enum
+extern
+float
+for
+goto
+if
+int
+long
+register
+return
+short
+signed
+sizeof
+static
+struct
+switch
+typedef
+union
+unsigned
+void
+volatile
+while
+
+inline (C99)
+restrict (C99)
+_Bool (C99)
+_Complex (C99)
+
+_Alignas (C11)
+_Alignof (C11)
+_Atomic (C11)
+_Generic (C11)
+_Noreturn (C11)
+_Static_assert (C11)
+_Thread_local (C11)
+
+alignas (C23)
+alignof (C23)
+bool (C23)
+constexpr (C23)
+false (C23)
+nullptr (C23)
+static_assert (C23)
+thread_local (C23)
+true (C23)
+typeof (C23)
+typeof_unqual (C23)
+_BitInt (C23)
+_Decimal128 (C23)
+_Decimal32 (C23)
+_Decimal64 (C23)
+_Imaginary (C99)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Preprocessor
+if
+elif
+else
+endif
+ifdef
+ifndef
+elifdef (C23)
+elifndef (C23)
+define
+undef
+include
+embed (C23)
+line
+error
+warning (C23)
+pragma
+defined
+__has_include (C23)
+__has_embed (C23)
+__has_c_attribute (C23)
+
+
+
+
+
+
+_Pragma (C99)
+
+
+
+
+
+asm
+fortran

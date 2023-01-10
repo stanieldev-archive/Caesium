@@ -1,0 +1,26 @@
+include std::console as con
+include[C] stdio.h
+
+define True as 1
+
+int32 main(int32 argc, char8^^ argv) = {
+    float32 a = 0.4;
+    float64 b;
+
+    /*   /*/*   */ /**/*/*/
+    if b is NULL {
+        b = 7.0;
+    }
+    */
+
+    bool compare = (a + b) > 4;
+    [char^] addition_string = a + b;
+
+    if compare {
+        #C printf("Printed with C");
+        con.print("Hello, World!");
+    }
+    else {
+        con.printf("Sum of a and b is {%f.5}", addition_string);
+    }
+}
